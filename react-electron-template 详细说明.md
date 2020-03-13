@@ -1,6 +1,6 @@
-# react-electron-templete 详细说明
+# react-electron-template 详细说明
 
-> [GitHub 链接](https://github.com/purple4pur/react-electron-templete) | 为了能更好地使用此模板，请仔细阅读此文。
+> [GitHub 链接](https://github.com/purple4pur/react-electron-template) | 为了能更好地使用此模板，请仔细阅读此文。
 
 ## 为什么使用此模板
 

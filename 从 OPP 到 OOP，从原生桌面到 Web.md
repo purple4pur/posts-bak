@@ -54,6 +54,6 @@ OPP 写法把上课的差异表现在函数内部，主语是动作：
 
 为了得到「2020 年学 winform 值不值得」的答案，我花了一整天查阅桌面 GUI 的各种技术（主要是 Windows 平台下的），它的发展，还有一些我觉得不错的软件是用什么写的，这个过程也了解了不少东西。winform 和 WPF 绝对是成功的代表，快速开发用得挺多的，而且也方便，但 Web 开发的模式也逐渐在桌面 GUI 里站住脚了。虽然内存开销和应用本身的大小会因为浏览器内核的原因显得庞大，但 Web 应用的平台兼容性和其他的一些特性，在客户端越来越不注重性能的趋势下，会作为 Web 应用的优势逐渐体现出来。
 
-查了一下，VS Code 就是用 Electron 写的界面，再深入了解一下 Electron，发现这就是 Node.js 那一套啊。对我而言，选择 Electron 代表着我几乎没有学习成本，因为才刚刚用 React 搭了这个博客出来，至少基础是过关了。所以我又花了一天时间找到了一个 React 搭配 Electron 开发桌面应用的流程，已经发布到了 [GitHub](https://github.com/purple4pur/react-electron-templete) 上，我估计应付我这种图一乐级别的塑料开发者应该是没有问题的。
+查了一下，VS Code 就是用 Electron 写的界面，再深入了解一下 Electron，发现这就是 Node.js 那一套啊。对我而言，选择 Electron 代表着我几乎没有学习成本，因为才刚刚用 React 搭了这个博客出来，至少基础是过关了。所以我又花了一天时间找到了一个 React 搭配 Electron 开发桌面应用的流程，已经发布到了 [GitHub](https://github.com/purple4pur/react-electron-template) 上，我估计应付我这种图一乐级别的塑料开发者应该是没有问题的。
 
 目前的计划是，尝试用这一套流程随便写点什么东西出来，熟悉一下 Electron 的特性。另外就是学一手 Typescript，这绝对是不吃亏的决定。之后再回来学学 WPF，它简单的开发流程我也还是当感兴趣的。
