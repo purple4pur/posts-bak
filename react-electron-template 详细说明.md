@@ -22,7 +22,7 @@
 
 `pview` 里面原本是 Electron 的调试命令，但由于 Electron 打开的是已经打包好的 React 应用，所以不会实时响应项目的更新，只能起到预览应用的作用。
 
-`pack-win` 执行了 electron-packager 的打包命令，打包后可以得到适用于 Windows 的 32 位 .exe 和其他运行所需的文件，理论上生成的这个文件夹就是可以直接带着使用的版本了。考虑到模板的工作原理，这条脚本已经把无用的 `node_modules` / `src` / `public` / `package.lock` 四个文件或文件夹去掉了，打包时不会再占用空间。如需打包其他平台的版本，或者更改打包出来的应用名等，可以参照 electron-packager 的 [文档](https://github.com/electron/electron-packager#usage) 对脚本进行修改。
+`pack-win` 执行了 electron-packager 的打包命令，打包后可以得到适用于 Windows 的 32 位 .exe 和其他运行所需的文件，理论上生成的这个文件夹就是可以直接带着使用的版本了。考虑到模板的工作原理，这条脚本已经把无用的 `node_modules` / `src` / `public` / `package-lock.json` 四个文件或文件夹去掉了，打包时不会再占用空间。如需打包其他平台的版本，或者更改打包出来的应用名等，可以参照 electron-packager 的 [文档](https://github.com/electron/electron-packager#usage) 对脚本进行修改。
 
 `prepview` 和 `prepack-win` 作为前两条脚本的前置命令，执行的就是 React 的 `build` 脚本，以此保证在预览和打包桌面应用时，操作对象是当前最新的版本。
 
