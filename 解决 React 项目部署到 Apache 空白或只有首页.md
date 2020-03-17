@@ -16,14 +16,17 @@ React 打包出来的是一个动态网页应用，实际上有且仅有 `index.
 
 1. 在 Apache 工作的根目录新建配置文件 `.htaccess`
 2. 写入配置
+
    ```config
    Options -MultiViews
    RewriteEngine On
    RewriteCond %{REQUEST_FILENAME} !-f
    RewriteRule ^ index.html [QSA,L]
    ```
+
    这段配置的意义是开启重定向功能，并将所有页面重定向到根目录的 `index.html`。
 3. （***可能是多余的设置，没有做过测试，但是这样做可以解决另一个不常见的问题***）在项目的 `package.json` 文件中添加一项
+
    ```json
    "homepage": "/"
    // 或者 "homepage": "."，但这个不能解决那个不常见的问题，上面的可以
